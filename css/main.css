@@ -119,15 +119,24 @@ img{
 /******************* HERO SECTION  STYLES START   ******************/
 .hero-section {
     background-color: #014E56;
+    background-image: url(../images/hero-bg__left.png);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: -100px 185px;
+
 }
 
 .hero-section__wrapper{
-    padding-top: 129px;
+    padding-top: 100px;
     padding-bottom: 250px;
     display: flex;
     justify-content: center;
     gap: 30px;
     align-items: center;
+    background-image: url(../images/hero-bg__bottom.png);
+    background-repeat: no-repeat;
+    background-position: right  bottom  -100px;
+    background-size:  358px 200px;
 }
 
 .hero-section__title{
@@ -174,7 +183,7 @@ img{
     margin: 0px;
     width: 50px;
     height: 4px;
-    background-color: #F67E7E;
+    background-color: #f67e7e;
     border: none;
     margin-bottom: 54px;
 }
