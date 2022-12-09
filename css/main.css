@@ -111,15 +111,12 @@ img{
 
 
 /******************* MAIN STYLES START   ******************/
-
-
+.site-main{
+    background-color: #fff;
+}
 /******************* HERO SECTION  STYLES START   ******************/
 .hero-section {
     background-color: #014E56;
-    background-image: url(../images/disk-hero-bg.png);
-    background-repeat: no-repeat;
-    background-size: 200px 200px;
-    background-position: -100px 185px;
 }
 
 .hero-section__wrapper{
@@ -129,19 +126,8 @@ img{
     justify-content: center;
     gap: 30px;
     align-items: center;
-    background-image: url(../images/disk-bottom.png);
-    background-repeat: no-repeat;
-    background-position: right  bottom  -100px;
-    background-size:  358px 200px;
 }
 
-    .hero-section{
-        background-image: url(../images/disk-hero-bg@2x.png);
-    }
-    .hero-section__wrapper{
-        background-image: url(../images/disk-bottom@2x.png);
-    }
-}
 .hero-section__title{
     width: 620px;
     font-weight: 700;
@@ -165,47 +151,6 @@ img{
     font-size: 18px;
     line-height: 28px;
     color: #FFFFFF;
-}
-
-@media only screen and (max-width: 768px) {
-    .hero-section{
-        background-image: none;
-    }
-    .hero-section__wrapper{
-        flex-direction: column;
-        gap: 24px;
-        text-align: center;
-        background-position: bottom -100px center;
-    }
-
-    .hero-section__title{
-        width: 350px;
-        font-size: 64px;
-        margin-bottom: 0;
-        line-height: 56px;
-    }
-
-    .line{
-        display: none;
-    }
-
-    .hero-section__desc{
-        width: 457px;
-        margin-top: 0;
-        font-size: 15px;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .hero-section__title{
-        width: 248px;
-        font-size: 40px;
-        line-height: 40px;
-    }
-
-    .hero-section__desc{
-        width: 327px;
-    }
 }
 
 /******************* HERO SECTION STYLES  END      ******************/
@@ -239,14 +184,7 @@ img{
     line-height: 48px;
     color: #FFFFFF;
 }
-.site-info__end--list::after{
-    width: 100px;
-    height: 244px;
-    content: url('../../images/info_bottomright.png');
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-}
+
 
 .site-info__end--item {
     list-style-type: none;
@@ -254,59 +192,11 @@ img{
     padding-left: 23px;
 }
 
-.site-info__end--item::before{
-    width: 72px;
-    height: 72px;
-    
-    content: url('../../images/icons/info_smallperson.png');
-    position: absolute;
-    left: -70px;
-    top: 7px;
-}
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-    .site-info__end--item::before{
-        content: url('../../images/icons/Info_smallperson@2x.png');
-    }
-}
 .site-info__end--item:nth-child(1) h5{
     margin-top: 58px;
 }
-.site-info__end--item:nth-child(2)::before{
-    content: url('../../images/icons/info_setting_icon.png');
-}
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-    .site-info__end--item:nth-child(2)::before{
-        content: url('../../images/icons/info_setting_icon@2x.png');
-    }
-}
 
-.site-info__end--item:nth-child(3)::before{
-    content: url('../../images/icons/info_icon_stat.png');
-}
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-    .site-info__end--item:nth-child(3)::before{
-        content: url('../../images/icons/info_icon_stat@2x.png');
-    }
-}
 
 
 .site-info__end--heading {
@@ -329,140 +219,5 @@ only screen and (                min-resolution: 2dppx) {
     mix-blend-mode: normal;
     opacity: 0.8;
 }
-
-
-@media (max-width:770px) {
-    .site-info__wrapper {
-        width: 100%;
-       
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        justify-content: space-between;
-        padding-top: 140px;
-        padding-bottom: 140px;
-       
-    }
-
-    .site-info__end--item{
-        padding-left: 100px;
-       margin-left: 30px;
-       margin-top: 50px;
-    }
-
-    .site-info__end--item::before{
-        width: 72px;
-        height: 72px;
-        
-        content: url('../../images/icons/info_smallperson.png');
-        position: absolute;
-        left: -70px;
-        top: -39px;
-    }
-    @media
-    only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (   min--moz-device-pixel-ratio: 2),
-    only screen and (     -o-min-device-pixel-ratio: 2/1),
-    only screen and (        min-device-pixel-ratio: 2),
-    only screen and (                min-resolution: 192dpi),
-    only screen and (                min-resolution: 2dppx) {
-        .site-info__end--item::before{
-            content: url('../../images/icons/Info_smallperson@2x.png');
-        }
-    }
-    
-}
-
-@media (max-width:375px){
-    .site-info__wrapper {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        justify-content: space-between;
-        padding-top: 140px;
-        padding-bottom: 140px;
-       
-    }
-
-    .site-info__end--item{
-        /* // padding-left: 100px;
-        // margin-left: 30px;
-        // margin-top: 50px; */
-        margin-right: 130px;
-        text-align: center;
-    }
-
-    .site-info__end--item::before{
-        width: 72px;
-        height: 72px;
-        
-        content: url('../../images/icons/info_smallperson.png');
-        position: absolute;
-        left: -70px;
-        top: -39px;
-    }
-    @media
-    only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (   min--moz-device-pixel-ratio: 2),
-    only screen and (     -o-min-device-pixel-ratio: 2/1),
-    only screen and (        min-device-pixel-ratio: 2),
-    only screen and (                min-resolution: 192dpi),
-    only screen and (                min-resolution: 2dppx) {
-        .site-info__end--item::before{
-            content: url('../../images/icons/Info_smallperson@2x.png');
-        }
-    }
-
-    .site-info__start--title {
-        width: 240px;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 48px;
-        color: #FFFFFF;
-    }
-
-    .site-info__end--list::after{
-        width: 100px;
-        height: 244px;
-        content: url('../../images/info_bottomright.png');
-        position: absolute;
-        right: 0px;
-        top: 0px;
-    }
-   
-    .site-info__end--item {
-        list-style-type: none;
-        position: relative;
-      
-        padding-bottom: 150px;
-    }
-    .site-info__end--item:nth-child(1){
-        margin-top: 120px;
-    }
-   
-    
-
-    .site-info__end--item::before{
-        width: 72px;
-        height: 72px;
-        
-        content: url('../../images/icons/info_smallperson.png');
-        position: absolute;
-        left: 250px;
-        top: -150px;
-    }
-    @media
-    only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (   min--moz-device-pixel-ratio: 2),
-    only screen and (     -o-min-device-pixel-ratio: 2/1),
-    only screen and (        min-device-pixel-ratio: 2),
-    only screen and (                min-resolution: 192dpi),
-    only screen and (                min-resolution: 2dppx) {
-        .site-info__end--item::before{
-            content: url('../../images/icons/Info_smallperson@2x.png');
-        }
-    }
-}
+/*************** SITE INFO END *************/
+/*************** MAIN STYLES END *************/
