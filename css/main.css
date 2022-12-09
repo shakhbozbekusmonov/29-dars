@@ -114,7 +114,7 @@ img{
 
 /******************* HERO SECTION  STYLES START   ******************/
 .hero-section {
-    background-color: var(--hero-bg-color);
+    background-color: #014E56;
     background-image: url(../images/disk-hero-bg.png);
     background-repeat: no-repeat;
     background-size: 200px 200px;
