@@ -121,13 +121,13 @@ img{
     background-color: #014E56;
     background-image: url(../images/hero-bg__left.png);
     background-repeat: no-repeat;
-    background-size: 200px 200px;
-    background-position: -100px 185px;
+    background-size: 100px 200px;
+    background-position: 0 185px;
 
 }
 
 .hero-section__wrapper{
-    padding-top: 100px;
+    padding-top: 130px;
     padding-bottom: 250px;
     display: flex;
     justify-content: center;
@@ -135,8 +135,8 @@ img{
     align-items: center;
     background-image: url(../images/hero-bg__bottom.png);
     background-repeat: no-repeat;
-    background-position: right  bottom  -100px;
-    background-size:  358px 200px;
+    background-position: right   bottom ;
+    background-size:  358px 100px;
 }
 
 .hero-section__title{
