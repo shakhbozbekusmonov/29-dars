@@ -109,7 +109,6 @@ img{
 }
 /****************** HEADER STYLES END *******************/
 
-
 /******************* MAIN STYLES START   ******************/
 .site-main{
     background-color: #fff;
@@ -220,4 +219,62 @@ img{
     opacity: 0.8;
 }
 /*************** SITE INFO END *************/
+
+/********** READY SECTION SYTLES START *********/
+.ready-section {
+    width: 100%;
+    background-color: #F67E7E;
+    background-image: url('/images/ready-bg-img.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .ready-section {
+        background-image: url('/images/ready-bg-img@2x.png');
+    }
+}
+
+
+
+.ready-section__wrapper {
+    padding-top: 76px;
+    padding-bottom: 86px;
+    padding-left: 90px;
+    padding-right: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ready-section__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 38px;
+    color: var(--build-bg--color);
+}
+
+.ready-section__btn {
+    padding: 9px 33px 11px 32px;
+    border: 2px solid var(--build-bg--color);
+    border-radius: 24px;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    white-space: nowrap;
+    color: var(--build-bg--color);
+}
+
+.ready-section__btn:hover {
+    background-color: #fff;
+}
+
+/********** READY SECTION SYTLES END *********/
 /*************** MAIN STYLES END *************/
+
