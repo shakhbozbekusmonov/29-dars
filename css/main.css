@@ -1,9 +1,11 @@
 
 /* ROOT */
 :root{
-    /* --header-bg-color: #fff; */
-    /* --main-bg-color: #fff; */
-    /* --main-text-color: #fff; */
+        --header-bg-color: #004047;
+        --main-bg-color: #002529;
+        --main-text-color: #fff;
+        --aside-bg-color: #F67E7E;
+        --teams-bg-color:#012F34;
 }
 
 html{
