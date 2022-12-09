@@ -108,3 +108,110 @@ img{
     color: #fff;
 }
 /****************** HEADER STYLES END *******************/
+
+/******************* MAIN STYLES START   ******************/
+
+
+/******************* HERO SECTION  STYLES START   ******************/
+.hero-section {
+    background-color: var(--hero-bg-color);
+    background-image: url(../images/disk-hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: -100px 185px;
+}
+
+.hero-section__wrapper{
+    padding-top: 129px;
+    padding-bottom: 250px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    background-image: url(../images/disk-bottom.png);
+    background-repeat: no-repeat;
+    background-position: right  bottom  -100px;
+    background-size:  358px 200px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .hero-section{
+        background-image: url(../images/disk-hero-bg@2x.png);
+    }
+    .hero-section__wrapper{
+        background-image: url(../images/disk-bottom@2x.png);
+    }
+}
+.hero-section__title{
+    width: 620px;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    color: #FFFFFF;
+}
+.hero-section__end{
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
+}
+.line{
+    width: 50px;
+    height: 4px;
+    background-color: #79C8C7;
+}
+
+.hero-section__desc{
+    width: 445px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-section{
+        background-image: none;
+    }
+    .hero-section__wrapper{
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+        background-position: bottom -100px center;
+    }
+
+    .hero-section__title{
+        width: 350px;
+        font-size: 64px;
+        margin-bottom: 0;
+        line-height: 56px;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .hero-section__desc{
+        width: 457px;
+        margin-top: 0;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .hero-section__title{
+        width: 248px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .hero-section__desc{
+        width: 327px;
+    }
+}
+
+/******************* HERO SECTION STYLES  END      ******************/
