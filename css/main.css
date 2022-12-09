@@ -281,7 +281,7 @@ only screen and (min-resolution: 2dppx) {
 
 /* FOOTER STYLES START */
 .site-footer{
-    background-color: var(--footer-bg-color);
+    background-color: #012F34;
 }
 .site-footer__wrapper{
     display: flex;
@@ -306,7 +306,7 @@ only screen and (min-resolution: 2dppx) {
     text-decoration: none;
     font-size: 18px;
     line-height: 28px;
-    color: var(--main-text-color);
+    color: #fff;
 }
 .site-address__list{
     margin: 0;
@@ -317,13 +317,13 @@ only screen and (min-resolution: 2dppx) {
     margin-bottom:  1px;
     font-size: 15px;
     line-height: 25px;
-    color: var(--main-text-color);
+    color: #fff;
     mix-blend-mode: normal;
     opacity: 0.6;
 }
 .site-address__link{
     text-decoration: none;
-    color: var(--main-text-color);
+    color: #fff;
 }
 
 
@@ -336,7 +336,7 @@ only screen and (min-resolution: 2dppx) {
     font-size: 15px;
     line-height: 25px;
     margin-top: 51px;
-    color: var(--main-text-color);
+    color: #fff;
     mix-blend-mode: normal;
     opacity: 0.6;
 }
