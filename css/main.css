@@ -265,22 +265,23 @@ only screen and (min-resolution: 2dppx) {
 }
 
 .ready-section__title {
+    margin: 0;
     font-weight: 700;
     font-size: 48px;
     line-height: 38px;
-    color: var(--build-bg--color);
+    color: #012F34;
 }
 
 .ready-section__btn {
     padding: 9px 33px 11px 32px;
-    border: 2px solid var(--build-bg--color);
+    border: 2px solid #012F34;
     border-radius: 24px;
     background-color: transparent;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
     white-space: nowrap;
-    color: var(--build-bg--color);
+    color: #012F34;
 }
 
 .ready-section__btn:hover {
