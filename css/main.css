@@ -575,3 +575,260 @@ only screen and (min-resolution: 2dppx) {
 }
 
 /* FOOTER STYLES END */
+
+
+
+.site-info__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.site-info {
+    background-color: #012F34;
+    position: relative;
+}
+
+.site-info__start--hr {
+    margin: 0px;
+    width: 50px;
+    height: 4px;
+    background-color: #F67E7E;
+    border: none;
+    margin-bottom: 54px;
+}
+
+.site-info__start--title {
+    width: 445px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+.site-info__end--list::after{
+    width: 100px;
+    height: 244px;
+    content: url('../../images/info_bottomright.png');
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.site-info__end--item {
+    list-style-type: none;
+    position: relative;
+    padding-left: 23px;
+}
+
+.site-info__end--item::before{
+    width: 72px;
+    height: 72px;
+    
+    content: url('../../images/icons/info_smallperson.png');
+    position: absolute;
+    left: -70px;
+    top: 7px;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .site-info__end--item::before{
+        content: url('../../images/icons/Info_smallperson@2x.png');
+    }
+}
+.site-info__end--item:nth-child(1) h5{
+    margin-top: 58px;
+}
+.site-info__end--item:nth-child(2)::before{
+    content: url('../../images/icons/info_setting_icon.png');
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .site-info__end--item:nth-child(2)::before{
+        content: url('../../images/icons/info_setting_icon@2x.png');
+    }
+}
+
+.site-info__end--item:nth-child(3)::before{
+    content: url('../../images/icons/info_icon_stat.png');
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .site-info__end--item:nth-child(3)::before{
+        content: url('../../images/icons/info_icon_stat@2x.png');
+    }
+}
+
+
+.site-info__end--heading {
+    width: 445px;
+    margin: 0px;
+    margin-bottom: 16px;
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F67E7E;
+}
+
+.site-info__end--subtitle {
+    width: 445px;
+    margin: 0px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+
+@media (max-width:770px) {
+    .site-info__wrapper {
+        width: 100%;
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        justify-content: space-between;
+        padding-top: 140px;
+        padding-bottom: 140px;
+       
+    }
+
+    .site-info__end--item{
+        padding-left: 100px;
+       margin-left: 30px;
+       margin-top: 50px;
+    }
+
+    .site-info__end--item::before{
+        width: 72px;
+        height: 72px;
+        
+        content: url('../../images/icons/info_smallperson.png');
+        position: absolute;
+        left: -70px;
+        top: -39px;
+    }
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+        .site-info__end--item::before{
+            content: url('../../images/icons/Info_smallperson@2x.png');
+        }
+    }
+    
+}
+
+@media (max-width:375px){
+    .site-info__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        justify-content: space-between;
+        padding-top: 140px;
+        padding-bottom: 140px;
+       
+    }
+
+    .site-info__end--item{
+        /* // padding-left: 100px;
+        // margin-left: 30px;
+        // margin-top: 50px; */
+        margin-right: 130px;
+        text-align: center;
+    }
+
+    .site-info__end--item::before{
+        width: 72px;
+        height: 72px;
+        
+        content: url('../../images/icons/info_smallperson.png');
+        position: absolute;
+        left: -70px;
+        top: -39px;
+    }
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+        .site-info__end--item::before{
+            content: url('../../images/icons/Info_smallperson@2x.png');
+        }
+    }
+
+    .site-info__start--title {
+        width: 240px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: #FFFFFF;
+    }
+
+    .site-info__end--list::after{
+        width: 100px;
+        height: 244px;
+        content: url('../../images/info_bottomright.png');
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+   
+    .site-info__end--item {
+        list-style-type: none;
+        position: relative;
+      
+        padding-bottom: 150px;
+    }
+    .site-info__end--item:nth-child(1){
+        margin-top: 120px;
+    }
+   
+    
+
+    .site-info__end--item::before{
+        width: 72px;
+        height: 72px;
+        
+        content: url('../../images/icons/info_smallperson.png');
+        position: absolute;
+        left: 250px;
+        top: -150px;
+    }
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+        .site-info__end--item::before{
+            content: url('../../images/icons/Info_smallperson@2x.png');
+        }
+    }
+}
