@@ -109,12 +109,121 @@ img{
 }
 /****************** HEADER STYLES END *******************/
 
+/******************* MAIN STYLES START   ******************/
+.site-main{
+    background-color: #fff;
+}
+/******************* HERO SECTION  STYLES START   ******************/
+.hero-section {
+    background-color: #014E56;
+}
 
+.hero-section__wrapper{
+    padding-top: 129px;
+    padding-bottom: 250px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.hero-section__title{
+    width: 620px;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    color: #FFFFFF;
+}
+.hero-section__end{
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
+}
+.line{
+    width: 50px;
+    height: 4px;
+    background-color: #79C8C7;
+}
+
+.hero-section__desc{
+    width: 445px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+/******************* HERO SECTION STYLES  END      ******************/
+
+/*************** SITE INFO START *************/
+.site-info__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.site-info {
+    background-color: #012F34;
+    position: relative;
+}
+
+.site-info__start--hr {
+    margin: 0px;
+    width: 50px;
+    height: 4px;
+    background-color: #F67E7E;
+    border: none;
+    margin-bottom: 54px;
+}
+
+.site-info__start--title {
+    width: 445px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+
+.site-info__end--item {
+    list-style-type: none;
+    position: relative;
+    padding-left: 23px;
+}
+
+
+.site-info__end--item:nth-child(1) h5{
+    margin-top: 58px;
+}
+
+
+
+.site-info__end--heading {
+    width: 445px;
+    margin: 0px;
+    margin-bottom: 16px;
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F67E7E;
+}
+
+.site-info__end--subtitle {
+    width: 445px;
+    margin: 0px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+/*************** SITE INFO END *************/
 
 /********** READY SECTION SYTLES START *********/
 .ready-section {
     width: 100%;
-    background-color: var(--ready-bg--color);
+    background-color: #F67E7E;
     background-image: url('/images/ready-bg-img.png');
     background-repeat: no-repeat;
     background-position: bottom left;
@@ -167,3 +276,5 @@ only screen and (min-resolution: 2dppx) {
 }
 
 /********** READY SECTION SYTLES END *********/
+/*************** MAIN STYLES END *************/
+
